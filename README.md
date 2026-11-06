@@ -1,8 +1,8 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/neofetch-dark.svg">
-  <img src="assets/neofetch-light.svg" alt="Syrah Fundal, product-minded developer" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="neofetch-dark.svg">
+  <img src="neofetch-light.svg" alt="Syrah Fundal, product-minded developer" width="100%">
 </picture>
 
 </div>

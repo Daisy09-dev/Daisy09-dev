@@ -1,7 +1,7 @@
 """Render the terminal-style profile card (dark + light SVG).
 
-Reads  profile.json and assets/portrait.txt
-Writes assets/neofetch-dark.svg and assets/neofetch-light.svg
+Reads  profile.json and portrait.txt
+Writes neofetch-dark.svg and neofetch-light.svg
 
 Live numbers (repos, followers, member since) come from the GitHub API.
 If the API cannot be reached, the values in profile.json are used instead.
@@ -12,7 +12,7 @@ import os
 import urllib.request
 from xml.sax.saxutils import escape
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.abspath(__file__))
 
 THEMES = {
     "dark": dict(
@@ -138,10 +138,10 @@ def build(theme_name, profile, stats, art):
 def main():
     profile = load_profile()
     stats = live_stats(profile)
-    with open(os.path.join(ROOT, "assets", "portrait.txt"), encoding="utf-8") as f:
+    with open(os.path.join(ROOT, "portrait.txt"), encoding="utf-8") as f:
         art = f.read().rstrip("\n").split("\n")
     for name in THEMES:
-        path = os.path.join(ROOT, "assets", f"neofetch-{name}.svg")
+        path = os.path.join(ROOT, f"neofetch-{name}.svg")
         with open(path, "w", encoding="utf-8") as f:
             f.write(build(name, profile, stats, art))
         print("wrote", path)
