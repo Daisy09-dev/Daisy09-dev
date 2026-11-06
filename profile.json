@@ -1,0 +1,11 @@
+{
+  "username": "daisy09-dev",
+  "name": "Syrah Fundal",
+  "role": "Product-minded developer",
+  "education": "BSIT, 2nd year (Programming)",
+  "stack": "Python · Flask · SQLite · Git",
+  "building": "RCG Routine (daily execution system)",
+  "location": "the public internet",
+  "status": "Building, learning, shipping in public.",
+  "fallback_stats": { "repos": 1, "followers": 2, "since": "" }
+}
