@@ -1,4 +1,4 @@
-name: Render synchronized ASCII portrait and capybara GIF
+name: Render animated ASCII face inside terminal card
 on:
   workflow_dispatch:
   push:
@@ -22,13 +22,13 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y fonts-noto-cjk
           pip install Pillow
-      - name: Render synchronized GIF
+      - name: Render animated terminal card
         run: python scripts/build_duo_gif.py
       - name: Commit GIF to profile
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/animated-duo.gif
+          git add assets/animated-terminal-card.gif
           if ! git diff --cached --quiet; then
             git commit -m "Render synchronized ASCII portrait and capybara GIF"
             git push
