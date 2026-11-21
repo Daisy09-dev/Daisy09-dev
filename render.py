@@ -65,7 +65,7 @@ def build(theme_name, profile, stats, art):
     art_x, art_y = pad_x, bar_h + 28
     art_w = max(len(line) for line in art) * art_cw
     info_x = int(art_x + art_w + 44)
-    width = info_x + 400
+    width = max(info_x + 610, 1024)
     height = int(art_y + len(art) * art_lh + 28)
 
     out = [
@@ -122,7 +122,7 @@ def build(theme_name, profile, stats, art):
             f'<text x="{info_x}" y="{y}" font-family="{FONT}" font-size="13">'
             f'<tspan fill="{t["key"]}" font-weight="700">{escape(key)}</tspan>'
             f'<tspan fill="{t["dim"]}">: </tspan>'
-            f'<tspan fill="{t["val"]}">{escape(val)}</tspan></text>'
+            f'<tspan x="{info_x + 144}" fill="{t["val"]}">{escape(val)}</tspan></text>'
         )
         y += lh
     y += 8
