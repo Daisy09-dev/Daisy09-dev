@@ -1,10 +1,16 @@
 <div align="center">
 
-<a href="https://daisy09-dev.github.io/Daisy09-dev/" title="Open cursor-reactive ASCII portrait (GitHub Pages)"><img src="./assets/animated-terminal-card.gif" alt="Animated ASCII portrait in a developer terminal card — click to explore projects" width="100%"></a>
+<a href="https://daisy09-dev.github.io/Daisy09-dev/" title="Open interactive ASCII portrait"><img src="./assets/ascii-portrait.svg" alt="Standalone animated ASCII portrait" width="530"></a>
+
+**DAISY09-DEV** · Aspiring Software Engineer · BS Information Technology
+
+*The portrait is now a separate asset from the profile information.*
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3200&pause=900&color=38BDF8&center=true&vCenter=true&width=760&lines=Aspiring+Software+Engineer;Python+%26+Web+Development;Building+useful+things+with+code" alt="Animated introduction: Aspiring Software Engineer, Python and web development" />
 
-[**Try the cursor-reactive ASCII portrait ↗**](https://daisy09-dev.github.io/Daisy09-dev/) · Move your mouse over the face—no clicks needed once opened.\n\n### Aspiring Software Engineer · Building with purpose
+[**Open the cursor-reactive portrait ↗**](https://daisy09-dev.github.io/Daisy09-dev/) · Cursor interaction works on the linked website, not within GitHub README.
+
+### Aspiring Software Engineer · Building with purpose
 
 **BS Information Technology Student · Python & Web Development · Open-Source Enthusiast**
 
