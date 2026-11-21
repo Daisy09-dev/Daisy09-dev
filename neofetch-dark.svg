@@ -4,13 +4,15 @@
 <clipPath id="c"><rect width="1024" height="404" rx="12"/></clipPath>
 </defs>
 <g clip-path="url(#c)">
-<rect width="808" height="404" fill="#0d1117"/>
-<rect width="808" height="36" fill="#161b22"/>
+<rect width="1024" height="404" fill="#0d1117"/>
+<rect width="1024" height="36" fill="#161b22"/>
 <line x1="0" y1="36" x2="1024" y2="36" stroke="#30363d"/>
 <circle cx="22" cy="18" r="6" fill="#388bfd"/>
 <circle cx="42" cy="18" r="6" fill="#58a6ff"/>
 <circle cx="62" cy="18" r="6" fill="#79c0ff"/>
 <text x="512" y="22" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="12" fill="#8b949e">daisy09-dev@github: ~</text>
+<g id="animated-ascii-portrait">
+<animateTransform attributeName="transform" type="translate" values="0 0;0 -2;2 -1;0 0;-2 1;0 0" keyTimes="0;.2;.4;.6;.8;1" dur="5.5s" repeatCount="indefinite"/>
 <text font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="10" fill="url(#g)" xml:space="preserve">
 <tspan x="28" y="64.0">              .+@@@@@%%%%%@@#*%@@%#*#%%@@+.</tspan>
 <tspan x="28" y="74.4">             ;%@@@@@@%%%@@@#-=#@@@@%%@@@@@%-</tspan>
@@ -43,6 +45,7 @@
 <tspan x="28" y="355.2">    -@@@@#==+%#%@%%=.  .,:::::;;;:,   ,-@=-@=##*%@@@@*,</tspan>
 <tspan x="28" y="365.6">   .@@@@@*;-+%#%*,=:.   ..........     .=, %*#%+*%@@@@-:</tspan>
 </text>
+</g>
 <text x="408" y="70" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="15" font-weight="700" fill="#58a6ff">daisy09-dev@github</text>
 <line x1="408" y1="80" x2="574" y2="80" stroke="#30363d"/>
 <text x="408" y="104" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="13"><tspan fill="#58a6ff" font-weight="700">Name</tspan><tspan fill="#8b949e">: </tspan><tspan x="552" fill="#c9d1d9">Syrah Fundal</tspan></text>
