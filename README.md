@@ -81,6 +81,18 @@ I build and improve small applications, prototypes, and practical software tools
 
 **Explore what I've built:** [Projects and repositories](https://github.com/Daisy09-dev?tab=repositories) · [DAISY09 terminal source](./terminal/fullscreen.py)
 
+### 3D contribution skyline
+
+<div align="center">
+
+<a href="https://github.com/Daisy09-dev?tab=overview" title="Explore my real GitHub contribution history">
+  <img src="./profile-3d-contrib/profile-night-view.svg" alt="3D GitHub contribution calendar in a dark theme, generated from Daisy09-dev's actual activity" width="100%">
+</a>
+
+<sub>3D activity visualization · Generated from real contribution records · Updated daily</sub>
+
+</div>
+
 ### Contribution activity
 
 <div align="center">
