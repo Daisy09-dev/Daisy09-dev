@@ -7,10 +7,12 @@
 
 ### Software developer in progress · Building with purpose
 
-**BS Information Technology · Python & Web Development · Philippines**
+**BS Information Technology · Python & Web Development · Open-source community learner**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Daisy09--dev-0f172a?style=flat-square&logo=github&logoColor=white)](https://github.com/Daisy09-dev)
 [![Projects](https://img.shields.io/badge/Explore-Projects-0284c7?style=flat-square&logo=github&logoColor=white)](https://github.com/Daisy09-dev?tab=repositories)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/syrah-fundal-848396309/)
+[![WordPress](https://img.shields.io/badge/WordPress-Community-21759B?style=flat-square&logo=wordpress&logoColor=white)](https://profiles.wordpress.org/syrah44/)
 [![Activity](https://img.shields.io/badge/View-Contributions-38bdf8?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/Daisy09-dev?tab=overview)
 
 </div>
@@ -24,6 +26,28 @@ I'm a second-year BSIT student who enjoys turning everyday challenges into pract
 - **Currently exploring:** Python, Flask, SQLite, JavaScript, and software design
 - **How I work:** Prototype → test → improve → document
 - **What matters:** Clear interfaces, useful features, and consistent learning
+
+### Credentials & community
+
+**WordCamp Philippines 2026 — Certificate of Achievement / Attendance**
+
+Participated in the two-day WordCamp Philippines event, **August 28–29, 2026**, at the Iloilo Convention Center. The certificate recognizes participation and contribution to the WordPress community and open-source movement.
+
+[**Verify WordCamp certificate ↗**](https://wpugph.com/?wcc_cert=1&token=AGntrb6GRjjuVNT75KjKKFPGuAqRyHqR) · Certificate ID: `AGNTRB6G`
+
+**Making WordPress community**
+
+- Participated in WordCamp community activities, including Contribution Day and Training/Community Team sessions.
+- Connected with the **Making WordPress #training** Slack community to learn about documentation, onboarding, and open-source collaboration.
+- WordPress.org username: [**syrah44**](https://profiles.wordpress.org/syrah44/) *(profile link; activity and roles should be checked on WordPress.org)*.
+
+*Community participation is not presented as employment, an official team appointment, or completed training certification.*
+
+### Client collaboration
+
+I build and improve small applications, prototypes, and practical software tools. I'm interested in opportunities involving **Python automation, simple web applications, front-end interfaces, documentation, and technical support**.
+
+**Explore my work:** [GitHub projects](https://github.com/Daisy09-dev?tab=repositories) · **Connect professionally:** [LinkedIn](https://www.linkedin.com/in/syrah-fundal-848396309/) · **WordPress community:** [WordPress.org](https://profiles.wordpress.org/syrah44/)
 
 ### Tech stack
 
