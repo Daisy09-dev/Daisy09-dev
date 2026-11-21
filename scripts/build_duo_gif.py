@@ -4,7 +4,7 @@ import random
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "assets" / "animated-duo.gif"  # Retained path for existing README compatibility
+OUT = ROOT / "assets" / "animated-terminal-card.gif"
 W, H = 1024, 430
 FRAMES = 32
 rng = random.Random(909)
