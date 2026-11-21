@@ -5,9 +5,9 @@
   <img src="./neofetch-light.svg" alt="DAISY09 developer profile banner" width="100%">
 </picture>
 
-### Software developer in progress · Building with purpose
+### Aspiring Software Engineer · Building with purpose
 
-**BS Information Technology · Python & Web Development · Open-source community learner**
+**BS Information Technology Student · Python & Web Development · Open-Source Enthusiast**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Daisy09--dev-0f172a?style=flat-square&logo=github&logoColor=white)](https://github.com/Daisy09-dev)
 [![Projects](https://img.shields.io/badge/Explore-Projects-0284c7?style=flat-square&logo=github&logoColor=white)](https://github.com/Daisy09-dev?tab=repositories)
