@@ -29,11 +29,9 @@ I'm a second-year BSIT student who enjoys turning everyday challenges into pract
 
 ### Credentials & community
 
-**WordCamp Philippines 2026 — Certificate of Achievement / Attendance**
+**WordPress community involvement**
 
-Participated in the two-day WordCamp Philippines event, **August 28–29, 2026**, at the Iloilo Convention Center. The certificate recognizes participation and contribution to the WordPress community and open-source movement.
-
-[**Verify WordCamp certificate ↗**](https://wpugph.com/?wcc_cert=1&token=AGntrb6GRjjuVNT75KjKKFPGuAqRyHqR) · Certificate ID: `AGNTRB6G`
+Participated in WordCamp Philippines 2026 and explored open-source collaboration through WordPress community activities.
 
 **Making WordPress community**
 
