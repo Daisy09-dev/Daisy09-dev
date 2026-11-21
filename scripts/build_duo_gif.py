@@ -6,7 +6,7 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "assets" / "animated-terminal-card.gif"
 W, H = 1024, 430
-FRAMES = 32
+FRAMES = 48
 rng = random.Random(909)
 
 def font(size, bold=False):
@@ -24,7 +24,7 @@ for row, line in enumerate(lines):
     for col, ch in enumerate(line):
         if ch != " ":
             face.append((ch, 38 + col * 7.2, 78 + row * 9.7,
-                         rng.uniform(-90, 90), rng.uniform(-85, 85),
+                         rng.uniform(-170, 170), rng.uniform(-130, 130),
                          rng.uniform(0, .05)))
 
 def smooth(t):
@@ -33,9 +33,9 @@ def smooth(t):
 
 def assembled(t, offset):
     t = (t - offset) % 1.
-    if t < .30: return smooth(t/.30)
-    if t < .67: return 1.
-    if t < .85: return 1.-smooth((t-.67)/.18)
+    if t < .32: return smooth(t/.32)
+    if t < .72: return 1.
+    if t < .92: return 1.-smooth((t-.72)/.20)
     return 0.
 
 frames = []
@@ -69,14 +69,27 @@ for f in range(FRAMES):
     for j, color in enumerate([(12,50,108),(12,75,158),(18,108,210),(56,139,253),
                                 (96,165,250),(125,190,250),(186,230,253)]):
         d.rectangle((565+j*34, 386, 599+j*34, 399), fill=color)
-    for ch, x, y, dx, dy, delay in face:
+    # Neon scanning beam, confined to the face panel.
+    scan_y = 77 + int((phase * 3 % 1) * 302)
+    d.line((25, scan_y, 480, scan_y), fill=(12, 66, 103), width=1)
+    for index, (ch, x, y, dx, dy, delay) in enumerate(face):
         a = assembled(phase, delay)
-        if a > .10:
-            d.text((x+(1-a)*dx, y+(1-a)*dy), ch, font=small,
-                   fill=(int(30+66*a), int(65+100*a), int(105+145*a)))
+        if a > .08:
+            # Individual glyphs spiral into the portrait, then dissolve.
+            angle = phase * 12.566 + index * .11
+            orbit = (1-a) * 36
+            xx = x + (1-a)*dx + orbit * __import__("math").cos(angle)
+            yy = y + (1-a)*dy + orbit * __import__("math").sin(angle)
+            shimmer = max(0, 1 - abs(scan_y - y) / 22)
+            brightness = min(1, a * .8 + shimmer * .28)
+            d.text((xx, yy), ch, font=small,
+                   fill=(int(22+95*brightness), int(65+138*brightness), int(110+145*brightness)))
+    # Animated effects stay inside the portrait half; professional info stays still.
+    d.text((38, 399), "ASCII // RECONSTRUCTING", font=small,
+           fill=(56, 189, 248) if phase < .35 or phase > .72 else (72, 105, 138))
     frames.append(im.quantize(colors=128, method=Image.Quantize.FASTOCTREE))
 
 OUT.parent.mkdir(parents=True, exist_ok=True)
 frames[0].save(OUT, save_all=True, append_images=frames[1:],
-               duration=250, loop=0, optimize=True, disposal=2)
+               duration=167, loop=0, optimize=True, disposal=2)
 print(f"Created {OUT}: animated ASCII face, static profile information")
