@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/animated-terminal-card.gif" alt="Animated terminal profile card: only the ASCII face moves" width="100%">
+<a href="https://github.com/Daisy09-dev?tab=repositories" title="Explore my projects and source code"><img src="./assets/animated-terminal-card.gif" alt="Animated ASCII portrait in a developer terminal card — click to explore projects" width="100%"></a>
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3200&pause=900&color=38BDF8&center=true&vCenter=true&width=760&lines=Aspiring+Software+Engineer;Python+%26+Web+Development;Building+useful+things+with+code" alt="Animated introduction: Aspiring Software Engineer, Python and web development" />
 
@@ -71,17 +71,15 @@ I build and improve small applications, prototypes, and practical software tools
 | **RCG Routine** | Personal daily execution system built with Flask and SQLite; work in progress |
 | **[Browse my repositories](https://github.com/Daisy09-dev?tab=repositories)** | Coursework, experiments, and ongoing software projects |
 
-### DAISY09 · Animated typography
+### Skills & technologies
 
 <div align="center">
 
-<img src="./assets/capybara.svg" alt="Chinese characters assembling into a capybara" width="100%">
-
-<sub>Chinese characters assemble into a capybara silhouette. Animation playback depends on the GitHub viewer.</sub>
+<img src="./assets/skills-showcase.svg" alt="Skills showcase: Python, JavaScript, HTML, CSS, Flask, SQLite, Git, GitHub and VS Code" width="100%">
 
 </div>
 
-[**Explore the Python source**](./terminal/fullscreen.py) · [**Project documentation**](./terminal/README.md)
+**Explore what I've built:** [Projects and repositories](https://github.com/Daisy09-dev?tab=repositories) · [DAISY09 terminal source](./terminal/fullscreen.py)
 
 ### Contribution activity
 
