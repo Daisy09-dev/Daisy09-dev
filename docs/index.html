@@ -2,24 +2,71 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>DAISY09 — Interactive Terminal</title><meta name="description" content="Cursor-reactive ASCII portrait and developer portfolio of Daisy09-dev">
 <style>
-:root{color-scheme:dark;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#060c18;color:#cce7fa}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:32px;background:radial-gradient(circle at 50% 20%,#0c2947,#060c18 70%)}main{width:min(1120px,100%)}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;gap:12px;flex-wrap:wrap}.top a,.links a{color:#7dd3fc;text-decoration:none;border:1px solid #285371;border-radius:8px;padding:9px 12px}.top a:hover,.links a:hover{background:#123a56}.tag{color:#38bdf8;letter-spacing:.12em}.card{position:relative;overflow:hidden;border:1px solid #28618a;border-radius:18px;background:#090f1d;box-shadow:0 20px 70px #0009,0 0 30px #0ea5e922}.bar{height:46px;display:flex;align-items:center;gap:9px;padding:0 19px;background:#121d2c;border-bottom:1px solid #29475c}.dot{height:11px;width:11px;border-radius:50%;background:#38bdf8}.dot:nth-child(2){background:#60a5fa}.dot:nth-child(3){background:#a5d8ff}.bar span:last-child{margin:auto;color:#8ba9bc;font-size:12px}.content{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:26px;padding:24px}.portrait{height:390px;position:relative;border:1px solid #164667;border-radius:12px;overflow:hidden;background:#071322;cursor:grab;touch-action:none}.portrait:active{cursor:grabbing}.portrait canvas{width:100%;height:100%;display:block}.portrait:after{content:"MOVE CURSOR TO INTERACT";position:absolute;bottom:10px;left:15px;color:#6aabc9;font-size:11px;pointer-events:none}.info{padding:18px 8px}.info h1{color:#60a5fa;font-size:clamp(19px,2.5vw,27px);margin:0 0 14px}.info .line{height:1px;background:#28495c;margin-bottom:22px}.field{display:grid;grid-template-columns:105px 1fr;gap:10px;margin:0 0 20px;font-size:clamp(12px,1.35vw,15px)}.field b{color:#38bdf8;font-weight:500}.field span{overflow-wrap:anywhere}.links{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.note{color:#7b9fb6;font-size:12px;margin-top:16px;line-height:1.6}.foot{color:#789db5;text-align:center;font-size:12px;margin-top:17px}@media(max-width:760px){.content{grid-template-columns:1fr}.portrait{height:350px}.info{padding:0}.field{margin-bottom:12px}}@media(prefers-reduced-motion:reduce){.portrait{cursor:default}}
-</style></head><body><main><div class="top"><span class="tag">DAISY09 / INTERACTIVE PROFILE</span><a href="https://github.com/Daisy09-dev">← GitHub profile</a></div><section class="card"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span>daisy09-dev@github: ~</span></div><div class="content"><div class="portrait" id="portrait" aria-label="Interactive ASCII portrait that responds to cursor movement"><canvas id="art"></canvas></div><div class="info"><h1>daisy09-dev@github</h1><div class="line"></div><div class="field"><b>Name</b><span>Syrah Fundal</span></div><div class="field"><b>Role</b><span>Aspiring Software Engineer</span></div><div class="field"><b>Education</b><span>BS Information Technology</span></div><div class="field"><b>Stack</b><span>Python · JavaScript · Flask · SQLite</span></div><div class="field"><b>Location</b><span>Philippines</span></div><div class="field"><b>Focus</b><span>Learning · Building · Contributing</span></div><div class="links"><a href="https://github.com/Daisy09-dev?tab=repositories">Projects ↗</a><a href="https://www.linkedin.com/in/syrah-fundal-848396309/">LinkedIn ↗</a><a href="https://profiles.wordpress.org/syrah44/">WordPress ↗</a></div><p class="note">Move the cursor to make the entire ASCII face follow you. Click and drag to reposition it independently; release to keep it there. Double-click to reset. The information stays fixed.</p></div></div></section><div class="foot">Made with HTML Canvas + JavaScript · No tracking · Respects reduced-motion preferences</div></main>
+:root{color-scheme:dark;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#060c18;color:#cce7fa}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:32px;background:radial-gradient(circle at 50% 20%,#0c2947,#060c18 70%)}main{width:min(1120px,100%)}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;gap:12px;flex-wrap:wrap}.top a,.links a{color:#7dd3fc;text-decoration:none;border:1px solid #285371;border-radius:8px;padding:9px 12px}.top a:hover,.links a:hover{background:#123a56}.tag{color:#38bdf8;letter-spacing:.12em}.card{position:relative;overflow:hidden;border:1px solid #28618a;border-radius:18px;background:#090f1d;box-shadow:0 20px 70px #0009,0 0 30px #0ea5e922}.bar{height:46px;display:flex;align-items:center;gap:9px;padding:0 19px;background:#121d2c;border-bottom:1px solid #29475c}.dot{height:11px;width:11px;border-radius:50%;background:#38bdf8}.dot:nth-child(2){background:#60a5fa}.dot:nth-child(3){background:#a5d8ff}.bar span:last-child{margin:auto;color:#8ba9bc;font-size:12px}.content{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:26px;padding:24px}.portrait{height:390px;position:relative;border:1px solid #164667;border-radius:12px;overflow:hidden;background:#071322;cursor:crosshair;touch-action:none}.portrait:active{cursor:grabbing}.portrait canvas{width:100%;height:100%;display:block}.portrait:after{content:"MOVE CURSOR TO INTERACT";position:absolute;bottom:10px;left:15px;color:#6aabc9;font-size:11px;pointer-events:none}.info{padding:18px 8px}.info h1{color:#60a5fa;font-size:clamp(19px,2.5vw,27px);margin:0 0 14px}.info .line{height:1px;background:#28495c;margin-bottom:22px}.field{display:grid;grid-template-columns:105px 1fr;gap:10px;margin:0 0 20px;font-size:clamp(12px,1.35vw,15px)}.field b{color:#38bdf8;font-weight:500}.field span{overflow-wrap:anywhere}.links{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.note{color:#7b9fb6;font-size:12px;margin-top:16px;line-height:1.6}.foot{color:#789db5;text-align:center;font-size:12px;margin-top:17px}@media(max-width:760px){.content{grid-template-columns:1fr}.portrait{height:350px}.info{padding:0}.field{margin-bottom:12px}}@media(prefers-reduced-motion:reduce){.portrait{cursor:default}}
+</style></head><body><main><div class="top"><span class="tag">DAISY09 / INTERACTIVE PROFILE</span><a href="https://github.com/Daisy09-dev">← GitHub profile</a></div><section class="card"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span>daisy09-dev@github: ~</span></div><div class="content"><div class="portrait" id="portrait" aria-label="Interactive ASCII portrait that responds to cursor movement"><canvas id="art"></canvas></div><div class="info"><h1>daisy09-dev@github</h1><div class="line"></div><div class="field"><b>Name</b><span>Syrah Fundal</span></div><div class="field"><b>Role</b><span>Aspiring Software Engineer</span></div><div class="field"><b>Education</b><span>BS Information Technology</span></div><div class="field"><b>Stack</b><span>Python · JavaScript · Flask · SQLite</span></div><div class="field"><b>Location</b><span>Philippines</span></div><div class="field"><b>Focus</b><span>Learning · Building · Contributing</span></div><div class="links"><a href="https://github.com/Daisy09-dev?tab=repositories">Projects ↗</a><a href="https://www.linkedin.com/in/syrah-fundal-848396309/">LinkedIn ↗</a><a href="https://profiles.wordpress.org/syrah44/">WordPress ↗</a></div><p class="note">Move your cursor through the face to scatter individual ASCII particles; they spring back independently. Drag to move the portrait, double-click to reset. Profile information stays fixed.</p></div></div></section><div class="foot">Made with HTML Canvas + JavaScript · No tracking · Respects reduced-motion preferences</div></main>
 <script>
 const source="              .+@@@@@%%%%%@@#*%@@%#*#%%@@+.\n             ;%@@@@@@%%%@@@#-=#@@@@%%@@@@@%-\n            +@@@@@@@%%@@@@@@#+@@@@@@@@@@@@@@#,\n           #@@@@@@@@@@@@@@@%+;:-#@@@@@@@@@@@@@,\n          #@@@@@@@@@@*-:,..      .;+%@@@@@@@@@@,\n         *@@@@@@@@*;.               .=%@@@@@@@@%.\n        -@@@@@@@%;                    .+@@@@@@@@*\n       .@@@@@@@*,                       ;%%@@@@@@;\n       +@@@@@#*.                         :**@@@@@%\n       @@@@@@*,                           ;:+@@@@@,\n      :@@@@@#:  .,:;;::.          ,;=**+=,:*,%@@@@-\n      -@@@@%-.::;-=+*##*-,     ,;+##*-,....=--@@@@=\n      =@@@@@,       .,;::,.   ,-=-;:        ;:@@@@#\n      *@@@@@   ,=#+#%%%#=;.   ,;--**#%%*#*; .:%@@@*\n      -@@@@%   ,++-*##+#;,.   .,,:*=**+;-;.  :#@@@#\n      -@@@@#      .....       ..   ...       :%@@@#\n      :@@@@%,                  .             :@@@@%\n      ,@@@@@,                   ..           :#@@@@.\n      ,@@@@%;          .  .   ,,  :.         -@@@@@:\n      ,@@@@@@-          .;-::;=*+;,          @@@@@@=\n      -@@@@@@@,                             +@@@@@@%\n      +@@@@@@@%.    .-;:-;;;;;-;-=;;-:     -@@@@@@@@.\n      +@@@@@@@@%:    .:+#*#++*+*#**+:     =@@@@@@@@@;\n      +@@@@@@@@@@=      ,:,,,,,,:;:     :#@@@@%@@@@@-\n      *@@%%%%%@@@@#,      .,,:;:,.    .+@@@@%#%%@@@@=\n     .@@@%%###@@@@@*:,              ,;=%@@@@#*#%@@@@#\n     ,@@@%#**##@@@@*:::,.       .,;=-;;#@@@%***#@@@@%\n     -@@@#+++%#@@@@*,..:;;:::;-==+=;..,#@%@%=#*#%@@@@:\n    -@@@@#==+%#%@%%=.  .,:::::;;;:,   ,-@=-@=##*%@@@@*,\n   .@@@@@*;-+%#%*,=:.   ..........     .=, %*#%+*%@@@@-:\n";
 const canvas=document.getElementById('art'),panel=document.getElementById('portrait'),ctx=canvas.getContext('2d');
-const lines=source.replace(/\r/g,'').split('\n');const maxCols=Math.max(...lines.map(x=>x.length));let glyphs=[],w=0,h=0,px=0,py=0,tx=0,ty=0,active=false,dragging=false,dragX=0,dragY=0,baseX=0,baseY=0,moveX=0,moveY=0,followX=0,followY=0,startX=0,startY=0;
-const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-function resize(){const rect=panel.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,2);w=rect.width;h=rect.height;canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);const step=Math.min((w-28)/(maxCols||1),(h-40)/(lines.length||1)*.91);ctx.font=step+'px monospace';const cw=ctx.measureText('@').width;const x0=(w-maxCols*cw)/2;const y0=(h-lines.length*step)/2+step;glyphs=[];lines.forEach((line,r)=>Array.from(line).forEach((ch,c)=>{if(ch!==' ')glyphs.push({ch,x:x0+c*cw,y:y0+r*step,step,seed:(r*17+c*11)%29})}));} 
+const lines=source.replace(/\r/g,'').split('\n'),maxCols=Math.max(...lines.map(s=>s.length));
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+let glyphs=[],w=0,h=0,mouseX=-999,mouseY=-999,inside=false,dragging=false,offsetX=0,offsetY=0,dragStartX=0,dragStartY=0,initialX=0,initialY=0,lastX=-999,lastY=-999;
+function resize(){
+ const rect=panel.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,2);
+ w=rect.width;h=rect.height;canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);
+ const step=Math.min((w-30)/(maxCols*.61),(h-35)/(lines.length*1.08));
+ ctx.font=step+'px monospace';const cw=ctx.measureText('@').width;
+ const x0=(w-maxCols*cw)/2,y0=(h-lines.length*step)/2+step;
+ glyphs=[];
+ lines.forEach((line,r)=>Array.from(line).forEach((ch,col)=>{
+  if(ch===' ')return;
+  const x=x0+col*cw,y=y0+r*step;
+  glyphs.push({ch,x,y,cx:x,cy:y,vx:0,vy:0,size:step,phase:(r*31+col*17)%101});
+ }));
+}
 function point(e){const b=panel.getBoundingClientRect();return {x:e.clientX-b.left,y:e.clientY-b.top};}
-panel.addEventListener('pointerdown',e=>{if(e.button!==0&&e.pointerType==='mouse')return;const q=point(e);dragging=true;active=true;startX=q.x;startY=q.y;dragX=baseX;dragY=baseY;tx=q.x;ty=q.y;panel.setPointerCapture(e.pointerId);});
-panel.addEventListener('pointermove',e=>{const q=point(e);tx=q.x;ty=q.y;active=true;if(dragging){baseX=Math.max(-w*.38,Math.min(w*.38,dragX+q.x-startX));baseY=Math.max(-h*.38,Math.min(h*.38,dragY+q.y-startY));}});
+panel.addEventListener('pointerdown',e=>{
+ if(e.pointerType==='mouse'&&e.button!==0)return;
+ const q=point(e);dragging=true;inside=true;dragStartX=q.x;dragStartY=q.y;initialX=offsetX;initialY=offsetY;
+ mouseX=q.x;mouseY=q.y;panel.setPointerCapture(e.pointerId);
+});
+panel.addEventListener('pointermove',e=>{
+ const q=point(e);const speed=Math.min(40,Math.hypot(q.x-lastX,q.y-lastY));lastX=q.x;lastY=q.y;
+ mouseX=q.x;mouseY=q.y;inside=true;
+ if(dragging){offsetX=Math.max(-w*.42,Math.min(w*.42,initialX+q.x-dragStartX));offsetY=Math.max(-h*.42,Math.min(h*.42,initialY+q.y-dragStartY));}
+ else if(!reduced){
+  for(const g of glyphs){
+   const dx=g.cx+offsetX-q.x,dy=g.cy+offsetY-q.y,dist=Math.hypot(dx,dy);
+   if(dist<95){const f=(1-dist/95)*(2.1+speed*.32);g.vx+=(dx/(dist||1))*f;g.vy+=(dy/(dist||1))*f;}
+  }
+ }
+});
 function endDrag(){dragging=false;}
-panel.addEventListener('pointerup',endDrag);panel.addEventListener('pointercancel',endDrag);
-panel.addEventListener('lostpointercapture',endDrag);
-panel.addEventListener('pointerleave',()=>{if(!dragging)active=false});
-panel.addEventListener('dblclick',()=>{baseX=0;baseY=0;moveX=0;moveY=0;});
+panel.addEventListener('pointerup',endDrag);panel.addEventListener('pointercancel',endDrag);panel.addEventListener('lostpointercapture',endDrag);
+panel.addEventListener('pointerleave',()=>{if(!dragging){inside=false;lastX=-999;lastY=-999;}});
+panel.addEventListener('dblclick',()=>{offsetX=0;offsetY=0;});
 window.addEventListener('resize',resize);resize();
-let tick=0;
-function draw(){tick++;px+=(tx-px)*.13;py+=(ty-py)*.13;const goalX=baseX+(!dragging&&active&&!reduced?(px-w/2)*.19:0);const goalY=baseY+(!dragging&&active&&!reduced?(py-h/2)*.19:0);moveX+=(goalX-moveX)*.14;moveY+=(goalY-moveY)*.14;ctx.clearRect(0,0,w,h);ctx.fillStyle='#071322';ctx.fillRect(0,0,w,h);if(active&&!reduced){const grad=ctx.createRadialGradient(px,py,0,px,py,140);grad.addColorStop(0,'rgba(20,150,230,.17)');grad.addColorStop(1,'rgba(20,150,230,0)');ctx.fillStyle=grad;ctx.fillRect(0,0,w,h)}for(const g of glyphs){let x=g.x+moveX,y=g.y+moveY;let alpha=.72;if(!reduced&&active){const dx=x-px,dy=y-py,dist=Math.hypot(dx,dy),radius=110;if(dist<radius){const force=Math.pow(1-dist/radius,2);x+=(dx/(dist||1))*force*26;y+=(dy/(dist||1))*force*26;alpha=Math.min(1,.72+force*.28)}}ctx.font=g.step+'px monospace';ctx.fillStyle='rgba(90,190,255,'+alpha+')';ctx.fillText(g.ch,x,y);}if(!reduced)requestAnimationFrame(draw)}
+let frame=0;
+function draw(){
+ frame++;ctx.clearRect(0,0,w,h);ctx.fillStyle='#071322';ctx.fillRect(0,0,w,h);
+ if(inside&&!reduced){
+  const glow=ctx.createRadialGradient(mouseX,mouseY,0,mouseX,mouseY,125);
+  glow.addColorStop(0,'rgba(15,145,230,.16)');glow.addColorStop(1,'rgba(15,145,230,0)');
+  ctx.fillStyle=glow;ctx.fillRect(0,0,w,h);
+ }
+ for(const g of glyphs){
+  const goalX=g.x+offsetX,goalY=g.y+offsetY;
+  if(reduced){g.cx=goalX;g.cy=goalY;}
+  else{
+   // Each ASCII character has its own spring and velocity.
+   g.vx+=(goalX-g.cx)*.065;g.vy+=(goalY-g.cy)*.065;
+   g.vx*=.85;g.vy*=.85;g.cx+=g.vx;g.cy+=g.vy;
+  }
+  const proximity=inside?Math.max(0,1-Math.hypot(g.cx-mouseX,g.cy-mouseY)/100):0;
+  ctx.font=g.size+'px monospace';
+  ctx.fillStyle='rgba('+Math.round(88+70*proximity)+','+Math.round(185+50*proximity)+',255,'+(.72+.28*proximity)+')';
+  ctx.fillText(g.ch,g.cx,g.cy);
+ }
+ if(!reduced)requestAnimationFrame(draw);
+}
 draw();
 </script></body></html>
