@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/animated-duo.gif" alt="Animated ASCII portrait and Chinese character capybara assembling together in an eight-second loop" width="100%">
+<img src="./assets/animated-duo.gif" alt="Terminal-style developer profile card with animated ASCII portrait on the left and static professional details on the right" width="100%">
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3200&pause=900&color=38BDF8&center=true&vCenter=true&width=760&lines=Aspiring+Software+Engineer;Python+%26+Web+Development;Building+useful+things+with+code" alt="Animated introduction: Aspiring Software Engineer, Python and web development" />
 
