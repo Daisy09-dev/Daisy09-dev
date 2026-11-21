@@ -23,7 +23,7 @@ face = []
 for row, line in enumerate(lines):
     for col, ch in enumerate(line):
         if ch != " ":
-            face.append((ch, 47 + col * 8.5, 78 + row * 10.0,
+            face.append((ch, 38 + col * 7.2, 78 + row * 9.7,
                          rng.uniform(-90, 90), rng.uniform(-85, 85),
                          rng.uniform(0, .05)))
 
