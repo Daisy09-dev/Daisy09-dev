@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320" role="img" aria-label="DAISY09 skills: Python, JavaScript, HTML, CSS, Flask, SQLite, Git, GitHub, VS Code">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1528"/><stop offset="1" stop-color="#071e35"/></linearGradient><linearGradient id="accent"><stop stop-color="#38bdf8"/><stop offset="1" stop-color="#7dd3fc"/></linearGradient></defs>
+<rect width="900" height="320" rx="22" fill="url(#bg)" stroke="#244c6a" stroke-width="2"/>
+<circle cx="32" cy="27" r="6" fill="#38bdf8"/><circle cx="54" cy="27" r="6" fill="#60a5fa"/><circle cx="76" cy="27" r="6" fill="#93c5fd"/>
+<text x="450" y="34" text-anchor="middle" fill="#7dd3fc" font-size="17" font-family="monospace" letter-spacing="2">DAISY09 // SKILLS &amp; TECHNOLOGIES</text>
+<path d="M30 53 H870" stroke="#244c6a"/>
+<g font-family="monospace" font-size="15" text-anchor="middle">
+<rect x="48" y="88" width="176" height="60" rx="12" fill="#102f4b" stroke="#267cae"/><text x="136" y="124" fill="#e0f2fe">Python</text>
+<rect x="246" y="88" width="176" height="60" rx="12" fill="#102f4b" stroke="#267cae"/><text x="334" y="124" fill="#e0f2fe">JavaScript</text>
+<rect x="444" y="88" width="176" height="60" rx="12" fill="#102f4b" stroke="#267cae"/><text x="532" y="124" fill="#e0f2fe">HTML / CSS</text>
+<rect x="642" y="88" width="176" height="60" rx="12" fill="#102f4b" stroke="#267cae"/><text x="730" y="124" fill="#e0f2fe">Flask</text>
+<rect x="48" y="170" width="176" height="60" rx="12" fill="#102f4b" stroke="#267cae"/><text x="136" y="206" fill="#e0f2fe">SQLite</text>
+<rect x="246" y="170" width="176" height="60" rx="12" fill="#102f4b" stroke="#267cae"/><text x="334" y="206" fill="#e0f2fe">Git</text>
+<rect x="444" y="170" width="176" height="60" rx="12" fill="#102f4b" stroke="#267cae"/><text x="532" y="206" fill="#e0f2fe">GitHub</text>
+<rect x="642" y="170" width="176" height="60" rx="12" fill="#102f4b" stroke="#267cae"/><text x="730" y="206" fill="#e0f2fe">VS Code</text>
+</g>
+<text x="450" y="275" text-anchor="middle" fill="#7dd3fc" font-size="15" font-family="monospace">LEARN  /  BUILD  /  TEST  /  IMPROVE</text>
+<path d="M48 292 H852" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
+</svg>
