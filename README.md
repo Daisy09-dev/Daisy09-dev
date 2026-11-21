@@ -36,3 +36,24 @@
 </div>
 
 <div align="center"><sub>Card and snake refresh automatically every day with GitHub Actions.</sub></div>
+
+
+<!-- DAISY09 PROJECT START -->
+## DAISY09 | Cyberpunk Terminal
+
+A personal macOS terminal experience featuring neon-blue
+Chinese character rain and a rotating typography capybara.
+
+![DAISY09 Capybara](assets/capybara.svg)
+
+### Contribution Snake
+
+![DAISY09 Snake](https://raw.githubusercontent.com/Daisy09-dev/Daisy09-dev/output/daisy09-snake.svg)
+
+### Terminal Project
+
+[Explore my DAISY09 Terminal](terminal/README.md)
+
+**Python · macOS · Zsh · GitHub Actions**
+
+<!-- DAISY09 PROJECT END -->
