@@ -2,17 +2,15 @@
 
 <a href="https://daisy09-dev.github.io/Daisy09-dev/" title="Open interactive ASCII portrait"><img src="./assets/ascii-portrait.svg" alt="Standalone animated ASCII portrait" width="530"></a>
 
-**DAISY09-DEV** · Aspiring Software Engineer · BS Information Technology
+### DAISY09-DEV
 
-*The portrait is now a separate asset from the profile information.*
+**Aspiring Software Engineer · BS Information Technology**
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3200&pause=900&color=38BDF8&center=true&vCenter=true&width=760&lines=Aspiring+Software+Engineer;Python+%26+Web+Development;Building+useful+things+with+code" alt="Animated introduction: Aspiring Software Engineer, Python and web development" />
 
-[**Open the cursor-reactive portrait ↗**](https://daisy09-dev.github.io/Daisy09-dev/) · Cursor interaction works on the linked website, not within GitHub README.
+[**Explore the interactive ASCII portrait ↗**](https://daisy09-dev.github.io/Daisy09-dev/)
 
-### Aspiring Software Engineer · Building with purpose
-
-**BS Information Technology Student · Python & Web Development · Open-Source Enthusiast**
+*Python & Web Development · Open-Source Enthusiast*
 
 [![GitHub](https://img.shields.io/badge/GitHub-Daisy09--dev-0f172a?style=flat-square&logo=github&logoColor=white)](https://github.com/Daisy09-dev)
 [![Projects](https://img.shields.io/badge/Explore-Projects-0284c7?style=flat-square&logo=github&logoColor=white)](https://github.com/Daisy09-dev?tab=repositories)
