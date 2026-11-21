@@ -1,81 +1,88 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="neofetch-dark.svg">
-  <img src="neofetch-light.svg" alt="Syrah Fundal — developer profile" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./neofetch-dark.svg">
+  <img src="./neofetch-light.svg" alt="DAISY09 developer profile banner" width="100%">
 </picture>
 
-### Building useful things, one commit at a time.
+### Software developer in progress · Building with purpose
 
-**BSIT student · Python developer · Learning by shipping**
+**BS Information Technology · Python & Web Development · Philippines**
 
-[![Profile](https://img.shields.io/badge/GitHub-Daisy09--dev-38bdf8?style=flat-square&logo=github&logoColor=white)](https://github.com/Daisy09-dev)
-[![Activity](https://img.shields.io/badge/Contributions-Live%20history-0969da?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/Daisy09-dev?tab=overview)
+[![GitHub](https://img.shields.io/badge/GitHub-Daisy09--dev-0f172a?style=flat-square&logo=github&logoColor=white)](https://github.com/Daisy09-dev)
+[![Projects](https://img.shields.io/badge/Explore-Projects-0284c7?style=flat-square&logo=github&logoColor=white)](https://github.com/Daisy09-dev?tab=repositories)
+[![Activity](https://img.shields.io/badge/View-Contributions-38bdf8?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/Daisy09-dev?tab=overview)
 
 </div>
 
-## About
+---
 
-I'm a second-year BSIT student focused on programming and building practical tools. I enjoy turning everyday problems into small, useful systems and improving them through experimentation.
+### About me
 
-## Currently building
+I'm a second-year BSIT student who enjoys turning everyday challenges into practical software. I'm focused on strengthening my programming fundamentals, building useful applications, and learning how to ship maintainable projects.
 
-- **RCG Routine** — a personal daily execution system using Flask and SQLite
-- **DAISY09 Terminal** — a neon-blue Chinese typography animation with a rotating capybara
-- Stronger foundations in programming, version control, and software design
+- **Currently exploring:** Python, Flask, SQLite, JavaScript, and software design
+- **How I work:** Prototype → test → improve → document
+- **What matters:** Clear interfaces, useful features, and consistent learning
 
-## Tech toolbox
+### Tech stack
 
-![Python](https://img.shields.io/badge/Python-0969da?style=flat-square&logo=python&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-0550ae?style=flat-square&logo=flask&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-388bfd?style=flat-square&logo=sqlite&logoColor=white)
-![Git](https://img.shields.io/badge/Git-0a3069?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-54aeff?style=flat-square&logo=github&logoColor=white)
+**Languages & tools**
 
-## Sky-blue contribution snake 🩵
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Daisy09-dev/Daisy09-dev/output/github-snake-dark.svg">
-  <img src="https://raw.githubusercontent.com/Daisy09-dev/Daisy09-dev/output/github-snake.svg" alt="Sky-blue snake following GitHub contribution history" width="100%">
-</picture>
+**Web & data**
 
-*Generated daily from GitHub's recorded contributions. The dates are not manually invented.*
+![Flask](https://img.shields.io/badge/Flask-0f172a?style=flat-square&logo=flask&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-07405E?style=flat-square&logo=sqlite&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
-## Contributions · actual GitHub dates
+### Selected work
 
-My contribution activity is recorded by GitHub itself. The calendar on my [public profile](https://github.com/Daisy09-dev?tab=overview) reflects qualifying contributions on their recorded dates, including any private contributions I have chosen to display.
+| Project | Focus |
+| :--- | :--- |
+| **[DAISY09 Terminal](./terminal/README.md)** | Python terminal animation featuring Chinese-character rain and a typography capybara |
+| **RCG Routine** | Personal daily execution system built with Flask and SQLite; work in progress |
+| **[Browse my repositories](https://github.com/Daisy09-dev?tab=repositories)** | Coursework, experiments, and ongoing software projects |
 
-[**View my live contribution calendar and activity →**](https://github.com/Daisy09-dev?tab=overview)
-
-*No manually generated or invented contribution dates.*
-
-<!-- DAISY09 PROJECT START -->
-## Featured project · DAISY09 Cyberpunk Terminal
-
-A macOS Terminal experience combining full-screen neon-blue Chinese character rain with a rotating capybara formed from Chinese typography. The animated SVG below also moves on supported GitHub viewers.
+### DAISY09 · Animated typography
 
 <div align="center">
 
-![Animated Chinese-character capybara](assets/capybara.svg)
+<img src="./assets/capybara.svg" alt="Chinese characters assembling into a capybara" width="100%">
+
+<sub>Chinese characters assemble into a capybara silhouette. Animation playback depends on the GitHub viewer.</sub>
 
 </div>
 
-**Python · macOS · Terminal animation · Unicode**
+[**Explore the Python source**](./terminal/fullscreen.py) · [**Project documentation**](./terminal/README.md)
 
-[**Explore the terminal project →**](terminal/README.md) · [**View the animation source →**](terminal/fullscreen.py)
+### Contribution activity
 
-To run it locally:
+<div align="center">
 
-```bash
-python3 terminal/fullscreen.py
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Daisy09-dev/Daisy09-dev/output/github-snake-dark.svg">
+  <img src="https://raw.githubusercontent.com/Daisy09-dev/Daisy09-dev/output/github-snake.svg" alt="Sky-blue animated GitHub contribution snake" width="100%">
+</picture>
 
-To repeat the animation:
+<sub>Sky-blue snake generated from recorded GitHub contribution activity; refreshed by GitHub Actions.</sub>
 
-```bash
-while true; do python3 terminal/fullscreen.py; done
-```
+</div>
 
-Stop with **Control + C**.
+For the exact contribution calendar and dates, [view my live GitHub activity](https://github.com/Daisy09-dev?tab=overview).
 
-<!-- DAISY09 PROJECT END -->
+---
+
+<div align="center">
+
+**Learning continuously. Building intentionally.**
+
+<sub>DAISY09 · Made with curiosity and code</sub>
+
+</div>
