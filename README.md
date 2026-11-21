@@ -1,10 +1,10 @@
 <div align="center">
 
-<a href="https://github.com/Daisy09-dev?tab=repositories" title="Explore my projects and source code"><img src="./assets/animated-terminal-card.gif" alt="Animated ASCII portrait in a developer terminal card — click to explore projects" width="100%"></a>
+<a href="https://daisy09-dev.github.io/Daisy09-dev/" title="Open cursor-reactive ASCII portrait (GitHub Pages)"><img src="./assets/animated-terminal-card.gif" alt="Animated ASCII portrait in a developer terminal card — click to explore projects" width="100%"></a>
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3200&pause=900&color=38BDF8&center=true&vCenter=true&width=760&lines=Aspiring+Software+Engineer;Python+%26+Web+Development;Building+useful+things+with+code" alt="Animated introduction: Aspiring Software Engineer, Python and web development" />
 
-### Aspiring Software Engineer · Building with purpose
+[**Try the cursor-reactive ASCII portrait ↗**](https://daisy09-dev.github.io/Daisy09-dev/) · Move your mouse over the face—no clicks needed once opened.\n\n### Aspiring Software Engineer · Building with purpose
 
 **BS Information Technology Student · Python & Web Development · Open-Source Enthusiast**
 
