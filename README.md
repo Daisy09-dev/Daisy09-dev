@@ -87,10 +87,7 @@ I build and improve small applications, prototypes, and practical software tools
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Daisy09-dev/Daisy09-dev/output/github-snake-dark.svg">
-  <img src="https://raw.githubusercontent.com/Daisy09-dev/Daisy09-dev/output/github-snake.svg" alt="Sky-blue animated GitHub contribution snake" width="100%">
-</picture>
+<img src="./assets/animated-terminal-card.gif" alt="Animated terminal profile card: only the ASCII face moves" width="100%">
 
 <sub>Sky-blue snake generated from recorded GitHub contribution activity; refreshed by GitHub Actions.</sub>
 
