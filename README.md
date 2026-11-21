@@ -1,9 +1,6 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./neofetch-dark.svg">
-  <img src="./neofetch-light.svg" alt="DAISY09 developer profile banner" width="100%">
-</picture>
+<img src="./assets/animated-duo.gif" alt="Animated ASCII portrait and Chinese character capybara assembling together in an eight-second loop" width="100%">
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3200&pause=900&color=38BDF8&center=true&vCenter=true&width=760&lines=Aspiring+Software+Engineer;Python+%26+Web+Development;Building+useful+things+with+code" alt="Animated introduction: Aspiring Software Engineer, Python and web development" />
 
