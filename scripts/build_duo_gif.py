@@ -1,12 +1,13 @@
 """Render a GitHub-compatible terminal card with ONLY its ASCII face animated."""
 from pathlib import Path
 import random
+import math
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "assets" / "animated-terminal-card.gif"
 W, H = 1024, 430
-FRAMES = 48
+FRAMES = 60
 rng = random.Random(909)
 
 def font(size, bold=False):
@@ -69,27 +70,54 @@ for f in range(FRAMES):
     for j, color in enumerate([(12,50,108),(12,75,158),(18,108,210),(56,139,253),
                                 (96,165,250),(125,190,250),(186,230,253)]):
         d.rectangle((565+j*34, 386, 599+j*34, 399), fill=color)
-    # Neon scanning beam, confined to the face panel.
-    scan_y = 77 + int((phase * 3 % 1) * 302)
-    d.line((25, scan_y, 480, scan_y), fill=(12, 66, 103), width=1)
+    # Eight coordinated effects, confined to the portrait area:
+    # matrix rain, particle assembly, blinking, hologram scan,
+    # glitch, rotation illusion, terminal cursor and HUD pulse.
+    scan_y = 78 + int((phase * 2.7 % 1) * 292)
+    pulse = .5 + .5 * math.sin(phase * 2 * math.pi * 3)
+    d.rounded_rectangle((25, 65, 524, 390), radius=12,
+                        outline=(15, int(58 + 40*pulse), int(92 + 70*pulse)), width=2)
+    for k in range(13):
+        rain_x = 39 + k * 36
+        rain_y = 74 + ((f * (4 + k % 4) * 3 + k * 43) % 290)
+        for j in range(5):
+            yy = rain_y - j * 15
+            if 75 < yy < 375:
+                d.text((rain_x, yy), "01@#%+"[(k+j+f//3) % 6], font=small,
+                       fill=(14, 43 + j*6, 69 + j*11))
+    d.line((27, scan_y, 519, scan_y), fill=(18, 94, 149), width=2)
+    # Subtle faux 3D head turn: shift only face glyphs, never the card.
+    turn = math.sin(phase * 2 * math.pi) * 5
+    blink = .48 < phase < .51 or .80 < phase < .825
+    glitch = .70 < phase < .75
     for index, (ch, x, y, dx, dy, delay) in enumerate(face):
         a = assembled(phase, delay)
-        if a > .08:
-            # Individual glyphs spiral into the portrait, then dissolve.
-            angle = phase * 12.566 + index * .11
-            orbit = (1-a) * 36
-            xx = x + (1-a)*dx + orbit * __import__("math").cos(angle)
-            yy = y + (1-a)*dy + orbit * __import__("math").sin(angle)
-            shimmer = max(0, 1 - abs(scan_y - y) / 22)
-            brightness = min(1, a * .8 + shimmer * .28)
-            d.text((xx, yy), ch, font=small,
-                   fill=(int(22+95*brightness), int(65+138*brightness), int(110+145*brightness)))
-    # Animated effects stay inside the portrait half; professional info stays still.
-    d.text((38, 399), "ASCII // RECONSTRUCTING", font=small,
-           fill=(56, 189, 248) if phase < .35 or phase > .72 else (72, 105, 138))
+        if a <= .08:
+            continue
+        angle = phase * 4 * math.pi + index * .11
+        orbit = (1-a) * 36
+        xx = x + (1-a)*dx + orbit*math.cos(angle) + turn * ((x-260)/260)
+        yy = y + (1-a)*dy + orbit*math.sin(angle)
+        # Eye-line blinking illusion via temporary horizontal compression.
+        if blink and 185 < y < 221:
+            yy = 204 + (yy-204)*.18
+        # A short, localized horizontal glitch near the end of the loop.
+        if glitch and int(y)//14 % 3 == 0:
+            xx += 13 if index % 2 else -9
+        # Keep particles inside the portrait panel; never cross into details.
+        if not (29 <= xx <= 512 and 68 <= yy <= 378):
+            continue
+        shimmer = max(0, 1-abs(scan_y-y)/20)
+        glow = min(1, .65*a + .35*shimmer + .08*pulse)
+        d.text((xx, yy), ch, font=small,
+               fill=(int(20+95*glow), int(59+146*glow), int(100+148*glow)))
+    d.text((38, 399), "ASCII // NEURAL RECONSTRUCTION", font=small,
+           fill=(56, 189, 248))
+    if f % 8 < 5:
+        d.rectangle((261, 400, 268, 411), fill=(56, 189, 248))
     frames.append(im.quantize(colors=128, method=Image.Quantize.FASTOCTREE))
 
 OUT.parent.mkdir(parents=True, exist_ok=True)
 frames[0].save(OUT, save_all=True, append_images=frames[1:],
-               duration=167, loop=0, optimize=True, disposal=2)
+               duration=150, loop=0, optimize=True, disposal=2)
 print(f"Created {OUT}: animated ASCII face, static profile information")
