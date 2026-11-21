@@ -29,10 +29,11 @@ jobs:
           from pathlib import Path
           p = Path("README.md")
           s = p.read_text()
-          start = s.find("<picture>")
-          end = s.find("</picture>", start)
-          if start >= 0 and end >= 0:
-              s = s[:start] + '<img src="./assets/animated-terminal-card.gif" alt="Animated terminal profile card: only the ASCII face moves" width="100%">' + s[end+len("</picture>"):]
+          # Only refresh the portrait card. Never modify the snake's <picture>.
+          old = '<img src="./assets/animated-terminal-card.gif" alt="Animated terminal profile card: only the ASCII face moves" width="100%">'
+          new = '<a href="https://github.com/Daisy09-dev?tab=repositories" title="Explore my projects and source code"><img src="./assets/animated-terminal-card.gif" alt="Animated ASCII portrait in a developer terminal card — click to explore projects" width="100%"></a>'
+          if old in s:
+              s = s.replace(old, new, 1)
               p.write_text(s)
           PY
       - name: Commit GIF to profile
