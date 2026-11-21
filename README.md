@@ -32,6 +32,15 @@ I'm a second-year BSIT student focused on programming and building practical too
 ![Git](https://img.shields.io/badge/Git-0a3069?style=flat-square&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-54aeff?style=flat-square&logo=github&logoColor=white)
 
+## Sky-blue contribution snake 🩵
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Daisy09-dev/Daisy09-dev/output/github-snake-dark.svg">
+  <img src="https://raw.githubusercontent.com/Daisy09-dev/Daisy09-dev/output/github-snake.svg" alt="Sky-blue snake following GitHub contribution history" width="100%">
+</picture>
+
+*Generated daily from GitHub's recorded contributions. The dates are not manually invented.*
+
 ## Contributions · actual GitHub dates
 
 My contribution activity is recorded by GitHub itself. The calendar on my [public profile](https://github.com/Daisy09-dev?tab=overview) reflects qualifying contributions on their recorded dates, including any private contributions I have chosen to display.
@@ -43,11 +52,11 @@ My contribution activity is recorded by GitHub itself. The calendar on my [publi
 <!-- DAISY09 PROJECT START -->
 ## Featured project · DAISY09 Cyberpunk Terminal
 
-A macOS Terminal experience combining full-screen neon-blue Chinese character rain with a rotating capybara formed from Chinese typography.
+A macOS Terminal experience combining full-screen neon-blue Chinese character rain with a rotating capybara formed from Chinese typography. The animated SVG below also moves on supported GitHub viewers.
 
 <div align="center">
 
-![Chinese-character capybara](assets/capybara.svg)
+![Animated Chinese-character capybara](assets/capybara.svg)
 
 </div>
 
