@@ -1,0 +1,32 @@
+name: Render synchronized ASCII portrait and capybara GIF
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/build_duo_gif.py'
+      - '.github/workflows/animated-duo.yml'
+      - 'portrait.txt'
+      - 'assets/capybara.svg'
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install image renderer
+        run: pip install Pillow
+      - name: Render synchronized GIF
+        run: python scripts/build_duo_gif.py
+      - name: Commit GIF to profile
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/animated-duo.gif
+          if ! git diff --cached --quiet; then
+            git commit -m "Render synchronized ASCII portrait and capybara GIF"
+            git push
+          fi
