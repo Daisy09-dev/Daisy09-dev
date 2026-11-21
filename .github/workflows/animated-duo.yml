@@ -6,7 +6,6 @@ on:
       - 'scripts/build_duo_gif.py'
       - '.github/workflows/animated-duo.yml'
       - 'portrait.txt'
-      - 'assets/capybara.svg'
 permissions:
   contents: write
 jobs:
@@ -24,12 +23,24 @@ jobs:
           pip install Pillow
       - name: Render animated terminal card
         run: python scripts/build_duo_gif.py
+      - name: Switch README to GIF after successful render
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path("README.md")
+          s = p.read_text()
+          start = s.find("<picture>")
+          end = s.find("</picture>", start)
+          if start >= 0 and end >= 0:
+              s = s[:start] + '<img src="./assets/animated-terminal-card.gif" alt="Animated terminal profile card: only the ASCII face moves" width="100%">' + s[end+len("</picture>"):]
+              p.write_text(s)
+          PY
       - name: Commit GIF to profile
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/animated-terminal-card.gif
+          git add assets/animated-terminal-card.gif README.md
           if ! git diff --cached --quiet; then
-            git commit -m "Render synchronized ASCII portrait and capybara GIF"
+            git commit -m "Render animated ASCII face inside terminal card"
             git push
           fi
