@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://daisy09-dev.github.io/Daisy09-dev/" title="Open interactive ASCII portrait"><img src="./assets/ascii-portrait.svg" alt="Standalone animated ASCII portrait" width="530"></a>
+<a href="https://daisy09-dev.github.io/Daisy09-dev/" title="Open interactive ASCII portrait"><img src="./assets/ascii-portrait-v2.svg" alt="Standalone animated ASCII portrait" width="530"></a>
 
 ### DAISY09-DEV
 
