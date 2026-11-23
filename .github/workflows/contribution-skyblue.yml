@@ -16,6 +16,8 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository scripts
+        uses: actions/checkout@v4
       - name: Generate snake from real GitHub contributions
         uses: Platane/snk/svg-only@v3
         with:
