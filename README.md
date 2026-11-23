@@ -50,6 +50,19 @@ I'm a second-year BSIT student who enjoys turning everyday problems into useful 
 
 <sub>Activity visualizations depend on external services or GitHub Actions and may take time to update.</sub>
 
+### Sky-blue contribution snake
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Daisy09-dev/Daisy09-dev/output/github-snake-dark.svg">
+  <img src="https://raw.githubusercontent.com/Daisy09-dev/Daisy09-dev/output/github-snake.svg" alt="Sky-blue contribution snake animated from GitHub activity" width="100%">
+</picture>
+
+<sub>Generated from GitHub contributions by the existing sky-blue snake workflow.</sub>
+
+</div>
+
 ### Community & collaboration
 
 I participated in **WordCamp Philippines 2026**, including Contribution Day and WordPress Training/Community Team activities. I'm interested in open-source collaboration, documentation, web applications, and technical support.
