@@ -1,36 +1,53 @@
 <div align="center">
 
-# DAISY09 <sub> / developer profile</sub>
+# DAISY09
 
-**Syrah Fundal** · BS Information Technology · Aspiring Software Engineer
+### Syrah Fundal · BS Information Technology
 
-*Building practical software. Learning in public.*
+**Build useful things. Learn by doing. Document the journey.**
 
-[![Projects](https://img.shields.io/badge/Projects-Explore-0c2947?style=for-the-badge&logo=github&logoColor=7dd3fc)](https://github.com/Daisy09-dev?tab=repositories)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Explore-0c2947?style=for-the-badge&logo=github&logoColor=7dd3fc)](https://daisy09-dev.github.io/Daisy09-dev/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0c2947?style=for-the-badge&logo=linkedin&logoColor=7dd3fc)](https://www.linkedin.com/in/syrah-fundal-848396309/)
 [![WordPress](https://img.shields.io/badge/WordPress-Community-0c2947?style=for-the-badge&logo=wordpress&logoColor=7dd3fc)](https://profiles.wordpress.org/syrah44/)
-
-[**Explore my interactive ASCII portrait ↗**](https://daisy09-dev.github.io/Daisy09-dev/)
 
 </div>
 
 ---
 
-### About
+## About me
 
-I'm a second-year BSIT student who enjoys turning everyday problems into useful applications. I focus on building strong programming fundamentals, experimenting with interfaces, and improving projects through testing and documentation.
+I'm a second-year BS Information Technology student in the Philippines, developing practical skills through coursework, personal experiments, and collaborative projects. I enjoy building interactive applications, understanding how systems work, and improving software through feedback and documentation.
 
-**Currently exploring:** Python · JavaScript · Flask · SQLite · Software design
+My current focus is **web development, Python applications, databases, and software design**. I'm also exploring real-time browser interactions and open-source collaboration.
 
-### Selected projects
+## Featured project — ROAD RUSH
 
-| Project | What it does | Status |
+**An educational 3D endless runner that combines arcade gameplay with road-safety learning.**
+
+Adapted from the open-source Subway Rush project, ROAD RUSH explores difficulty-based quizzes, motorcycle pursuit, animated meme-style obstacle attacks, synthesized audio, and peer-to-peer multiplayer rooms.
+
+**Stack:** JavaScript · Three.js · Web Audio API · PeerJS · Vercel
+
+[![Play](https://img.shields.io/badge/Play-ROAD_RUSH-0284c7?style=for-the-badge&logo=vercel)](https://lto-road-rush.vercel.app/)
+[![Source](https://img.shields.io/badge/Source-Code-0c2947?style=for-the-badge&logo=github)](https://github.com/Daisy09-dev/subway-surfers)
+[![Docs](https://img.shields.io/badge/Development-Documentation-0c2947?style=for-the-badge&logo=readthedocs)](https://github.com/Daisy09-dev/subway-surfers/blob/main/docs/DEVELOPMENT_DOCUMENTATION.md)
+
+> AI-assisted educational prototype. Quiz content is unofficial; multiplayer and device-level gameplay still require verification. The development record explains implementation decisions and limitations.
+
+## Selected work
+
+| Project | What I explored | Technologies |
 | :--- | :--- | :--- |
-| [DAISY09 Terminal](./terminal/README.md) | Python terminal animation with visual effects | Explore |
-| RCG Routine | Personal routine-tracking system built with Flask and SQLite | In progress |
-| [All repositories](https://github.com/Daisy09-dev?tab=repositories) | Coursework, prototypes, and software experiments | Browse |
+| [StudyCoach](https://github.com/Daisy09-dev/StudyCoach) | Study routines, equation-based timers and session tracking | JavaScript, Node.js |
+| [Study Timer App](https://github.com/Daisy09-dev/study_timer_App) | Collaborative desktop productivity application, OOP and layered design | Python, Tkinter, SQLite |
+| [Sign Language Study System](https://github.com/Daisy09-dev/SignLanguageStudySystem) | Learning modules, webcam practice and progress tracking | Flask, SQLite, OpenCV |
+| [Student Management System](https://github.com/Daisy09-dev/student-management-system-tkinter) | CRUD operations, validation and file persistence | Python, Tkinter |
+| [Web Quiz Collection](https://github.com/Daisy09-dev/web-quiz-collection) | Interactive programming quizzes and immediate feedback | HTML, CSS, JavaScript |
+| [DAISY09 Terminal](./terminal/README.md) | Personalized terminal animation and creative coding | Python, shell |
 
-### Toolkit
+[Browse all repositories →](https://github.com/Daisy09-dev?tab=repositories)
+
+## Technical toolkit
 
 <div align="center">
 
@@ -38,7 +55,21 @@ I'm a second-year BSIT student who enjoys turning everyday problems into useful 
 
 </div>
 
-### GitHub activity
+**Practicing:** Object-oriented programming · CRUD · REST integration · Git workflows · UI development · Technical documentation
+
+**Exploring:** Real-time networking · Computer vision · Software architecture · Deployment
+
+## Community & collaboration
+
+I participated in WordCamp Philippines 2026, including Contribution Day and WordPress Training/Community Team activities. I'm interested in contributing to open-source projects, learning from other developers, and making technical information easier to understand.
+
+[WordPress profile](https://profiles.wordpress.org/syrah44/) · [LinkedIn](https://www.linkedin.com/in/syrah-fundal-848396309/)
+
+## Creative corner
+
+[Explore my interactive ASCII portrait ↗](https://daisy09-dev.github.io/Daisy09-dev/) · [Terminal experiments ↗](./terminal/README.md)
+
+## GitHub activity
 
 <div align="center">
 
@@ -50,7 +81,7 @@ I'm a second-year BSIT student who enjoys turning everyday problems into useful 
 
 <sub>Activity visualizations depend on external services or GitHub Actions and may take time to update.</sub>
 
-### Sky-blue contribution snake
+### Contribution snake
 
 <div align="center">
 
@@ -63,11 +94,6 @@ I'm a second-year BSIT student who enjoys turning everyday problems into useful 
 
 </div>
 
-### Community & collaboration
-
-I participated in **WordCamp Philippines 2026**, including Contribution Day and WordPress Training/Community Team activities. I'm interested in open-source collaboration, documentation, web applications, and technical support.
-
-[WordPress.org](https://profiles.wordpress.org/syrah44/) · [LinkedIn](https://www.linkedin.com/in/syrah-fundal-848396309/) · [GitHub projects](https://github.com/Daisy09-dev?tab=repositories)
 
 ---
 
@@ -75,6 +101,6 @@ I participated in **WordCamp Philippines 2026**, including Contribution Day and 
 
 **LEARN / BUILD / TEST / IMPROVE**
 
-<sub>DAISY09 · Made with curiosity and code</sub>
+<sub>DAISY09 · A portfolio in progress</sub>
 
 </div>
