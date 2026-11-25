@@ -1,7 +1,5 @@
 <div align="center">
 
-# DAISY09
-
 ### Syrah Fundal · BS Information Technology
 
 **Build useful things. Learn by doing. Document the journey.**
