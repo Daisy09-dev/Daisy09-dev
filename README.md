@@ -69,13 +69,9 @@ I participated in WordCamp Philippines 2026, including Contribution Day and Word
 ## GitHub activity
 
 <div align="center">
-<img src="./assets/language-radar.svg" alt="Public original repository language distribution radar" width="70%">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Daisy09-dev&theme=github-compact&color=58a6ff&line=58a6ff&point=ffffff&hide_border=true" alt="Recent contribution activity" width="100%">
+<img src="./assets/contribution-radar.svg" alt="Contribution profile radar" width="58%">
+<img src="./assets/contribution-skyline.svg" alt="3D contribution skyline" width="100%">
 </div>
-
-### Contribution skyline
-
-<img src="./profile-3d-contrib/profile-night-view.svg" alt="3D contribution skyline" width="100%">
 
 ### Contribution snake
 
