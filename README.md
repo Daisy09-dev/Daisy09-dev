@@ -66,41 +66,18 @@ I participated in WordCamp Philippines 2026, including Contribution Day and Word
 
 [Explore my interactive ASCII portrait ↗](https://daisy09-dev.github.io/Daisy09-dev/) · [Terminal experiments ↗](./terminal/README.md)
 
-## GitHub statistics
+## GitHub activity
 
 <div align="center">
-<img src="https://streak-stats.demolab.com?user=Daisy09-dev&theme=github-dark-blue&hide_border=true" alt="GitHub contribution streak" width="49%">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Daisy09-dev&theme=github_dark" alt="Repository language distribution" width="49%">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Daisy09-dev&theme=github_dark" alt="Repository language distribution" width="45%">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Daisy09-dev&theme=github-compact&color=58a6ff&line=58a6ff&point=ffffff&hide_border=true" alt="Recent contribution activity" width="100%">
 </div>
-
-## Contribution activity
-
-<div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Daisy09-dev&theme=github-compact&color=58a6ff&line=58a6ff&point=ffffff&hide_border=true" alt="Recent GitHub contribution activity" width="100%">
-</div>
-
-
-<div align="center">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Daisy09-dev&theme=tokyonight" alt="GitHub profile contribution overview" width="100%">
-
-<img src="./profile-3d-contrib/profile-night-view.svg" alt="3D contribution skyline generated from GitHub activity" width="100%">
-
-</div>
-
-<sub>Activity visualizations depend on external services or GitHub Actions and may take time to update.</sub>
 
 ### Contribution snake
 
 <div align="center">
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Daisy09-dev/Daisy09-dev/output/github-snake-dark.svg">
-  <img src="https://raw.githubusercontent.com/Daisy09-dev/Daisy09-dev/output/github-snake.svg" alt="Sky-blue contribution snake animated from GitHub activity" width="100%">
+  <img src="https://raw.githubusercontent.com/Daisy09-dev/Daisy09-dev/output/github-snake.svg" alt="Contribution snake" width="100%">
 </picture>
-
-<sub>Generated from GitHub contributions by the existing sky-blue snake workflow.</sub>
-
 </div>
-
-
