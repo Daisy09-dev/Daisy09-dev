@@ -2,7 +2,7 @@
 
 ### Syrah Fundal · BS Information Technology
 
-**Build useful things. Learn by doing. Document the journey.**
+Python · JavaScript · Web development
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Explore-0c2947?style=for-the-badge&logo=github&logoColor=7dd3fc)](https://daisy09-dev.github.io/Daisy09-dev/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0c2947?style=for-the-badge&logo=linkedin&logoColor=7dd3fc)](https://www.linkedin.com/in/syrah-fundal-848396309/)
@@ -47,15 +47,14 @@ Adapted from the open-source Subway Rush project, ROAD RUSH explores difficulty-
 
 ## Technical toolkit
 
-<div align="center">
+| Area | Technologies |
+| :--- | :--- |
+| Languages | ![Python](https://img.shields.io/badge/Python-161b22?logo=python&logoColor=3776AB) ![JavaScript](https://img.shields.io/badge/JavaScript-161b22?logo=javascript) ![HTML](https://img.shields.io/badge/HTML-161b22?logo=html5) ![CSS](https://img.shields.io/badge/CSS-161b22?logo=css&logoColor=60a5fa) |
+| Frameworks & UI | ![Flask](https://img.shields.io/badge/Flask-161b22?logo=flask) ![React](https://img.shields.io/badge/React-161b22?logo=react) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-161b22?logo=tailwindcss) `Tkinter` |
+| Backend & data | ![Node.js](https://img.shields.io/badge/Node.js-161b22?logo=nodedotjs) ![Express](https://img.shields.io/badge/Express-161b22?logo=express) ![SQLite](https://img.shields.io/badge/SQLite-161b22?logo=sqlite&logoColor=60a5fa) |
+| Tools | ![Git](https://img.shields.io/badge/Git-161b22?logo=git) ![GitHub](https://img.shields.io/badge/GitHub-161b22?logo=github) ![Vercel](https://img.shields.io/badge/Vercel-161b22?logo=vercel) `VS Code` |
 
-<img src="./assets/skills-showcase.svg" alt="Python, JavaScript, HTML, CSS, Flask, SQLite, Git, GitHub and VS Code" width="100%">
-
-</div>
-
-**Practicing:** Object-oriented programming · CRUD · REST integration · Git workflows · UI development · Technical documentation
-
-**Exploring:** Real-time networking · Computer vision · Software architecture · Deployment
+**Currently studying:** OOP, data structures, REST APIs, software design and testing.
 
 ## Community & collaboration
 
@@ -67,7 +66,19 @@ I participated in WordCamp Philippines 2026, including Contribution Day and Word
 
 [Explore my interactive ASCII portrait ↗](https://daisy09-dev.github.io/Daisy09-dev/) · [Terminal experiments ↗](./terminal/README.md)
 
-## GitHub activity
+## GitHub statistics
+
+<div align="center">
+<img src="https://streak-stats.demolab.com?user=Daisy09-dev&theme=github-dark-blue&hide_border=true" alt="GitHub contribution streak" width="49%">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Daisy09-dev&theme=github_dark" alt="Repository language distribution" width="49%">
+</div>
+
+## Contribution activity
+
+<div align="center">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Daisy09-dev&theme=github-compact&color=58a6ff&line=58a6ff&point=ffffff&hide_border=true" alt="Recent GitHub contribution activity" width="100%">
+</div>
+
 
 <div align="center">
 
@@ -93,12 +104,3 @@ I participated in WordCamp Philippines 2026, including Contribution Day and Word
 </div>
 
 
----
-
-<div align="center">
-
-**LEARN / BUILD / TEST / IMPROVE**
-
-<sub>DAISY09 · A portfolio in progress</sub>
-
-</div>
