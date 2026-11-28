@@ -27,6 +27,11 @@ def decorate(path):
             ET.SubElement(g,tag("circle"),{"cx":"8","cy":"8","r":str(5.6-i*.32 if j==0 else 4.4-i*.28),"fill":color})
             if i==0:
                 for x in (6,10): ET.SubElement(g,tag("circle"),{"cx":str(x),"cy":"6","r":"1.1","fill":"#07304a"})
+    for name, delay, markup in [["ghost",0.29,"<path d=\"M2 13V7a6 6 0 0 1 12 0v6l-3-2-3 2-3-2Z\" fill=\"#f9a8d4\"/><circle cx=\"6\" cy=\"7\" r=\"1.5\" fill=\"#17263a\"/><circle cx=\"10\" cy=\"7\" r=\"1.5\" fill=\"#17263a\"/>"],["pac",0.4,"<path d=\"M14 4A7 7 0 1 0 14 12L8 8Z\" fill=\"#facc15\"/><circle cx=\"8\" cy=\"4\" r=\"1\" fill=\"#17263a\"/>"]]:
+        css.append(f".friend-{name}{{animation:s0 {ms}ms linear -{ms-round(ms*delay)}ms infinite;}}")
+        friend=ET.SubElement(layer,tag("g"),{"class":"friend-"+name})
+        for child in ET.fromstring('<g xmlns="'+SVG+'">'+markup+'</g>'):
+            friend.append(child)
     style.text+="/* companion-sync */"+"".join(css)
     tree.write(path,encoding="unicode")
 if __name__=="__main__":
