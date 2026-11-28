@@ -32,6 +32,13 @@ def decorate(path):
         friend=ET.SubElement(layer,tag("g"),{"class":"friend-"+name})
         for child in ET.fromstring('<g xmlns="'+SVG+'">'+markup+'</g>'):
             friend.append(child)
+    for i, delay in enumerate([.10,.35,.65]):
+        css.append(f".apple{i}{{animation:s0 {ms}ms linear -{round(ms*delay)}ms infinite;}}.fruit{i}{{animation:fruitblink {ms}ms linear -{round(ms*delay)}ms infinite;}}")
+        fruit=ET.SubElement(ET.SubElement(layer,tag("g"),{"class":f"apple{i}"}),tag("g"),{"class":f"fruit{i}"})
+        for child in ET.fromstring('<g xmlns="'+SVG+'">'+"<path d=\"M8 4C2 0 0 8 4 12Q8 15 12 12C16 8 14 0 8 4Z\" fill=\"#ef4444\"/><path d=\"M8 4V1\" stroke=\"#a16207\" stroke-width=\"1.5\"/><path d=\"M8 3Q10 -1 13 1Q12 4 8 3\" fill=\"#4ade80\"/>"+'</g>'):
+            fruit.append(child)
+    css.append("@keyframes fruitblink{0%,85%{opacity:1}90%,100%{opacity:0}}")
+    layer.append(ET.fromstring("<g xmlns=\"http://www.w3.org/2000/svg\" transform=\"translate(320 -27)\" font-family=\"Arial,sans-serif\"><rect width=\"210\" height=\"22\" rx=\"5\" fill=\"#17263a\" stroke=\"#58a6ff\"/><text x=\"105\" y=\"15\" text-anchor=\"middle\" font-size=\"11\" fill=\"#e0f2fe\">Hi! Feel free to explore my repos.</text></g>"))
     style.text+="/* companion-sync */"+"".join(css)
     tree.write(path,encoding="unicode")
 if __name__=="__main__":
